@@ -3,69 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leropong Guest House - Book Now</title>
+    <title>Leropong Guest House - Online Reservation</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="page-container">
-    <header>
-        <div class="logo-placeholder">LG</div>
-        <h1>Leropong Guest House</h1>
-        <p class="motto">Where Comfort Meets Tranquility</p>
-    </header>
+<div class="top-utility-bar">
+    <div>AVANI HOME PARTNER | LOYALTY ARCHITECTURE</div>
+    <div>CALL US: +267 71000000</div>
+</div>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="rooms.html">Rooms</a></li>
-            <li><a href="booknow.html" class="active">Book Now</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="specials.html">Specials</a></li>
-        </ul>
-    </nav>
+<header>
+    <div class="logo-placeholder">LG</div>
+    <h1>Leropong Guest House</h1>
+    <p class="motto">Where Comfort Meets Tranquility</p>
+</header>
 
-    <main>
-        <h2 style="text-align: center; margin-bottom: 25px; color: #5c4033;">BOOK NOW !</h2>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="booknow.html" class="active">Book Now</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="specials.html">Specials</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="booking-panel-box">
+        <h2 style="text-align: center; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 30px; color: var(--earth-brown);">Secure Your Sanctuary</h2>
         
-        <div class="form-container">
-            <!-- Form actions and native validations configured perfectly for W3C marking standards criteria -->
-            <form action="#" method="POST" onsubmit="alert('Thank you! Your booking request at Leropong Guest House has been received.'); return false;">
-                
-                <div class="form-group">
-                    <label for="fullname">NAME</label>
-                    <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
-                </div>
+        <form action="#" method="POST" onsubmit="alert('Congratulations! Your luxury reservation request has been processed securely.'); return false;">
+            <div class="input-block-element">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+            </div>
 
-                <div class="form-group">
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
-                </div>
+            <div class="input-block-element">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="name@domain.com">
+            </div>
 
-                <div class="form-group">
-                    <label for="checkin">CHECK IN DATE:</label>
+            <div class="form-row">
+                <div class="input-block-element">
+                    <label for="checkin">Check-In Date</label>
                     <input type="date" id="checkin" name="checkin" required>
                 </div>
-
-                <div class="form-group">
-                    <label for="checkout">CHECK OUT DATE:</label>
+                <div class="input-block-element">
+                    <label for="checkout">Check-Out Date</label>
                     <input type="date" id="checkout" name="checkout" required>
                 </div>
+            </div>
 
-                <div class="form-group">
-                    <label for="requests">SPECIAL REQUESTS:</label>
-                    <textarea id="requests" name="requests" rows="4" placeholder="Any special dietary requirements, room placements, etc."></textarea>
-                </div>
+            <div class="input-block-element">
+                <label for="requests">Special Requests / Requirements</label>
+                <textarea id="requests" name="requests" rows="4" placeholder="Let us know if you require specific farm tours, transport, or dietary needs..."></textarea>
+            </div>
 
-                <button type="submit" class="btn-submit">GREEN 'CONFIRM BOOKING' BUTTON</button>
-            </form>
-        </div>
-    </main>
+            <button type="submit" class="btn-submit-premium">Confirm Booking</button>
+        </form>
+    </div>
+</main>
 
-    <footer>
-        <p>&copy; 2026 Leropong Guest House. Developed by Anele-Leteng Mosanako (BIDA25-078 Y1G2).</p>
-    </footer>
-</div>
+<footer>
+    <p>&copy; 2026 Leropong Guest House | Designed & Developed by Anele-Leteng Mosanako (BIDA25-078 Y1G2)[cite: 2].</p>
+</footer>
 
 </body>
 </html>
