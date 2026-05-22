@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leropong Guest House - Seasonal Specials</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<div class="page-container">
+    <header>
+        <div class="logo-placeholder">LG</div>
+        <h1>Leropong Guest House</h1>
+        <p class="motto">Where Comfort Meets Tranquility</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="booknow.html">Book Now</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="specials.html" class="active">Specials</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 style="text-align: center; margin-bottom: 15px; color: #5c4033;">THIS MONTH'S SPECIALS</h2>
+        <p id="current-date" style="text-align: center; font-weight: bold; margin-bottom: 30px; color: #2d5a27;"></p>
+
+        <div class="specials-list">
+            
+            <div class="special-item">
+                <div>
+                    <p style="font-weight: bold; color: #2d5a27;">SPECIAL 1 - FARM HOLIDAY BUNDLE</p>
+                    <p>DESCRIPTION OF SPECIAL 1 WITH PRICES IN BWP.</p>
+                </div>
+                <a href="booknow.html" class="btn-action">VIEW DETAILS BUTTON</a>
+            </div>
+
+            <div class="special-item">
+                <div>
+                    <p style="font-weight: bold; color: #2d5a27;">SPECIAL 2 - WEEKEND ROMANTIC GETAWAY</p>
+                    <p>DESCRIPTION OF SPECIAL 2 WITH PRICES IN BWP.</p>
+                </div>
+                <a href="booknow.html" class="btn-action">VIEW DETAILS BUTTON</a>
+            </div>
+
+            <div class="special-item">
+                <div>
+                    <p style="font-weight: bold; color: #2d5a27;">SPECIAL 3 - LONG STAY DISCOUNT</p>
+                    <p>DESCRIPTION OF SPECIAL 3 WITH PRICES IN BWP.</p>
+                </div>
+                <a href="booknow.html" class="btn-action">VIEW DETAILS BUTTON</a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Basic Behavioral Layer script logic configured cleanly to inject real-time client date strings smoothly -->
+    <script>
+        const dateDisplay = document.getElementById('current-date');
+        const today = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        dateDisplay.textContent = `DATE ACCESSED: ${today.toLocaleDateString('en-US', options).toUpperCase()}`;
+    </script>
+
+    <footer>
+        <p>&copy; 2026 Leropong Guest House. Developed by Anele-Leteng Mosanako (BIDA25-078 Y1G2).</p>
+    </footer>
+</div>
+
+</body>
+</html>
