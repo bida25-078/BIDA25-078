@@ -42,21 +42,25 @@ header {
     position: relative;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
-
-.logo-placeholder {
-    width: 65px;
-    height: 65px;
-    background: linear-gradient(45deg, #8b5cf6, #d946ef); /* Vibrant Wireframe marker kept for grading compliance */
-    color: var(--white);
+.logo-container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-weight: 800;
-    font-size: 1.3rem;
-    border-radius: 50%;
-    margin: 0 auto 15px auto;
-    box-shadow: 0 0 15px rgba(217, 70, 239, 0.5);
-    border: 2px solid var(--white);
+    align-items: center;
+    margin-bottom: 15px; 
+    width: 100%;
+}
+
+
+.brand-logo-img {
+    height: 80px;            
+    width: auto;             
+    border-radius: 50%;     
+    transition: transform 0.3s ease;
+}
+
+
+.brand-logo-img:hover {
+    transform: scale(1.05);
 }
 
 header h1 {
