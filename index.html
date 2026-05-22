@@ -63,6 +63,25 @@
 <footer>
     <p>&copy; 2026 Leropong Guest House |  Anele-Leteng Mosanako (BIDA25-078 Y1G2).</p>
 </footer>
+<script>
+    let currentSlideIndex = 0;
 
+    function moveSlide(direction) {
+        const slides = document.querySelectorAll('.slide');
+        
+        slides[currentSlideIndex].classList.remove('active');
+        
+        currentSlideIndex += direction;
+        
+        
+        if (currentSlideIndex >= slides.length) {
+            currentSlideIndex = 0;
+        } else if (currentSlideIndex < 0) {
+            currentSlideIndex = slides.length - 1;
+        }
+        
+        slides[currentSlideIndex].classList.add('active');
+    }
+</script>
 </body>
 </html>
