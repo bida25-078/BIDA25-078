@@ -3,21 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leropong Guest House - Online Reservation</title>
+    <title>Leropong Guest House - Book Now</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="top-utility-bar">
-    <div>LEROPONG GUEST HOUSE</div>
-    <div>CALL US: +267 73119666</div>
-</div>
-
 <header>
     <div class="logo-container">
-        <a href="index.html">
-            <img src="logo.jpeg" alt="Leropong Guest House Logo" class="brand-logo-img">
-        </a>
+        <img src="outside2.jpeg" alt="Leropong Guest House Logo" class="header-logo">
     </div>
     <h1>Leropong Guest House</h1>
     <p class="motto">Where Comfort Meets Tranquility</p>
@@ -33,44 +26,65 @@
     </ul>
 </nav>
 
-<main>
-    <div class="booking-panel-box">
-        <h2 style="text-align: center; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 30px; color: var(--earth-brown);">Secure Your Sanctuary</h2>
+<main class="booking-page-wrapper">
+    
+    <h2 class="w3-main-title">DONT BE SHY! BOOK NOW!</h2>
+
+    <div class="split-booking-widget">
         
-        <form action="#" method="POST" onsubmit="alert('Congratulations! Your luxury reservation request has been processed securely.'); return false;">
-            <div class="input-block-element">
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+        <div class="booking-form-panel">
+            <div class="panel-header-tab">
+                <h3>BOOKING</h3>
             </div>
-
-            <div class="input-block-element">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required placeholder="name@domain.com">
-            </div>
-
-            <div class="form-row">
-                <div class="input-block-element">
-                    <label for="checkin">Check-In Date</label>
-                    <input type="date" id="checkin" name="checkin" required>
+            
+            <form action="#" method="POST" class="w3-internal-form" onsubmit="alert('Reservation request processed successfully! We look forward to hosting you.'); return false;">
+                
+                <div class="w3-input-group">
+                    <label for="bname">Name/Leina :</label>
+                    <input type="text" id="bname" required placeholder="Your name">
                 </div>
-                <div class="input-block-element">
-                    <label for="checkout">Check-Out Date</label>
-                    <input type="date" id="checkout" name="checkout" required>
+
+                <div class="w3-input-group">
+                    <label for="bemail">Email :</label>
+                    <input type="email" id="bemail" required placeholder="Your email">
                 </div>
-            </div>
 
-            <div class="input-block-element">
-                <label for="requests">Special Requests / Requirements</label>
-                <textarea id="requests" name="requests" rows="4" placeholder="Let us know if you require specific farm tours, transport, or dietary needs..."></textarea>
-            </div>
+                <div class="w3-input-group">
+                    <label for="checkin">Check In Date :</label>
+                    <input type="date" id="checkin" required>
+                </div>
 
-            <button type="submit" class="btn-submit-premium">Confirm Booking</button>
-        </form>
+                <div class="w3-input-group">
+                    <label for="checkout">Check Out Date :</label>
+                    <input type="date" id="checkout" required>
+                </div>
+
+                <div class="w3-input-group">
+                    <label for="bguests">Number of Guests :</label>
+                    <select id="bguests" required>
+                        <option value="" disabled selected hidden>Select number of guests</option>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5+">5+ Group</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-w3-submit">BOOK NOW</button>
+            </form>
+        </div>
+
+        <div class="booking-image-panel">
+            <img src="images/guesthouse-pool.jpg" alt="Leropong Guest House Property View">
+        </div>
+
     </div>
+
 </main>
 
 <footer>
-    <p>&copy; 2026 Leropong Guest House | Designed & Developed by Anele-Leteng Mosanako (BIDA25-078 Y1G2)[cite: 2].</p>
+    <p>&copy; 2026 Leropong Guest House| Anele-Leteng Mosanako (BIDA25-078 Y1G2) </p>
 </footer>
 
 </body>
