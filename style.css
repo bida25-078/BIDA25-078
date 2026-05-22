@@ -1040,18 +1040,6 @@ footer {
     .next-btn { right: 15px; }
 }
 
-.booking-page-wrapper {
-    width: 100%;
-    max-width: 100% !important;
-    padding: 50px 8% !important;
-    background: linear-gradient(rgba(45, 30, 16, 0.75), rgba(45, 30, 16, 0.85)), 
-            url('pool.png') no-repeat center center/cover;
-    box-sizing: border-box;
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .booking-page-wrapper {
