@@ -574,3 +574,379 @@ footer {
         height: 320px;         
     }
 }
+
+
+.specials-page-wrapper {
+    width: 100%;
+    max-width: 100% !important;
+    padding: 40px 6% !important;
+    background-color: #faf9f6; 
+    box-sizing: border-box;
+}
+
+.specials-title-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.specials-title-header h2 {
+    font-size: 2.2rem;
+    color: #2d1e10; 
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+.specials-title-header .access-date {
+    font-size: 0.95rem;
+    color: #2d5a27; 
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.specials-layout-grid {
+    display: grid;
+    grid-template-columns: 2.3fr 1fr;
+    gap: 30px;
+    width: 100%;
+    align-items: start;
+}
+
+@media (max-width: 1024px) {
+    .specials-layout-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.vouchers-main-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filter-pills-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.pill {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.pill-active {
+    background-color: #2d5a27;
+    color: #ffffff;
+}
+
+.pill-inactive {
+    background-color: #eae7e0;
+    color: #555555;
+}
+
+
+.voucher-card {
+    background: #ffffff;
+    border-radius: 14px;
+    border: 1px solid #eadecc;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.voucher-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(74, 51, 25, 0.05);
+}
+
+.voucher-left-info {
+    display: flex;
+    gap: 20px;
+    align-items: start;
+}
+
+.voucher-icon-box {
+    width: 50px;
+    height: 50px;
+    background-color: #f7f4ed;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    border: 1px solid #eadecc;
+}
+
+.voucher-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.voucher-title-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.voucher-title-row h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #2d1e10;
+    font-weight: 700;
+}
+
+.badge {
+    padding: 3px 8px;
+    font-size: 0.72rem;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.badge-green {
+    background-color: #eaf2e8;
+    color: #2d5a27;
+}
+
+.badge-grey {
+    background-color: #f0ede6;
+    color: #666666;
+}
+
+.voucher-description {
+    font-size: 0.92rem;
+    color: #555555;
+    line-height: 1.5;
+    margin: 0 0 15px 0;
+    max-width: 580px;
+}
+
+.voucher-meta-row {
+    display: flex;
+    gap: 12px;
+    font-size: 0.8rem;
+    color: #888888;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.green-text {
+    color: #2d5a27;
+    font-weight: 600;
+}
+
+.more-details-link {
+    font-size: 0.82rem;
+    color: #2d1e10;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+.voucher-right-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100%;
+    min-width: 130px;
+    flex-shrink: 0;
+}
+
+.discount-display {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.discount-display .percentage {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #4a3319; 
+}
+
+.discount-display .off-text {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #888888;
+    letter-spacing: 1px;
+}
+
+.btn-action-trigger {
+    background-color: #2d5a27; 
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    transition: background-color 0.2s;
+}
+
+.btn-action-trigger:hover {
+    background-color: #1e3d1a;
+}
+
+@media (max-width: 650px) {
+    .voucher-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .voucher-right-action {
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        border-top: 1px solid #f0ede6;
+        padding-top: 15px;
+        margin-top: 5px;
+    }
+    .discount-display { margin-bottom: 0; }
+}
+
+
+.vouchers-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-widget {
+    background-color: #ffffff;
+    border: 1px solid #eadecc;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.sidebar-widget h4 {
+    margin: 0 0 15px 0;
+    font-size: 1rem;
+    color: #2d1e10;
+    font-weight: 700;
+}
+
+.widget-gold {
+    background-color: #fffaf0;
+    border: 1px solid #f3e1c3;
+}
+
+.widget-badge {
+    background-color: #fcecd2;
+    color: #8a5800;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.gold-percentage {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #a06a00;
+    margin: 10px 0 5px 0;
+}
+
+.gold-title {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #2d1e10;
+    margin: 0 0 8px 0;
+}
+
+.gold-desc {
+    font-size: 0.85rem;
+    color: #666666;
+    line-height: 1.5;
+    margin: 0 0 18px 0;
+}
+
+
+.btn-sidebar-dark {
+    display: block;
+    width: 100%;
+    background-color: #2d1e10;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+.btn-sidebar-dark:hover { background-color: #1c120a; }
+
+.widget-header-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.widget-header-row h4 { margin: 0; }
+
+.widget-simple-text {
+    font-size: 0.85rem;
+    color: #555555;
+    line-height: 1.5;
+    margin: 0 0 15px 0;
+}
+
+.btn-sidebar-light {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #dcd8cf;
+    color: #2d1e10;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.btn-sidebar-light:hover { background-color: #faf9f6; }
+
+
+.tags-cloud-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background-color: #f0ede6;
+    color: #4a3319;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 4px;
+}
+
+.about-corporate-meta {
+    border-top: 1px solid #f0ede6;
+    padding-top: 12px;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.about-corporate-meta p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #666666;
+}
